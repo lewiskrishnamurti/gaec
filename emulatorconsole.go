@@ -63,12 +63,12 @@ var (
 )
 
 var (
-	reKO                 = regexp.MustCompile(`KO:\\s+(.*)`)
-	sEmulatorRegexp      = regexp.MustCompile(`emulator-(\\d+)`)
-	sVoiceStatusRegexp   = regexp.MustCompile(`(?i)gsm\\s+voice\\s+state:\\s*([a-z]+)`)
-	sDataStatusRegexp    = regexp.MustCompile(`(?i)gsm\\s+data\\s+state:\\s*([a-z]+)`)
-	sDownloadSpeedRegexp = regexp.MustCompile(`(?i)\\s+download\\s+speed:\\s+(\\d+)\\s+bits.*`)
-	sMinLatencyRegexp    = regexp.MustCompile(`(?i)\\s+minimum\\s+latency:\\s+(\\d+)\\s+ms`)
+	reKO                 = regexp.MustCompile(`KO:\s+(.*)`)
+	sEmulatorRegexp      = regexp.MustCompile(`emulator-(\d+)`)
+	sVoiceStatusRegexp   = regexp.MustCompile(`(?i)gsm\s+voice\s+state:\s*([a-z]+)`)
+	sDataStatusRegexp    = regexp.MustCompile(`(?i)gsm\s+data\s+state:\s*([a-z]+)`)
+	sDownloadSpeedRegexp = regexp.MustCompile(`(?i)\s+download\s+speed:\s+(\d+)\s+bits.*`)
+	sMinLatencyRegexp    = regexp.MustCompile(`(?i)\s+minimum\s+latency:\s+(\d+)\s+ms`)
 )
 
 var (
